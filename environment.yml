@@ -1,0 +1,14 @@
+name: llama_32_3b_instruct_launcher_langchain
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+    - langchain>=1.0.5
+    - langchain-community>=0.4.1
+    - langchain-core>=1.0.4
+
+# Install custom wheel manually after environment setup:
+# pip install from https://github.com/dougeeai/llama-cpp-python-wheels or build from source
